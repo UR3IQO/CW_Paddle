@@ -1,3 +1,5 @@
+_[English description is here](README.md)_
+
 # Телеграфный манипулятор напечатанный на 3D принтере
 ***автор RC6OF (ex UR3IQO)***
 

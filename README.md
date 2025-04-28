@@ -1,102 +1,101 @@
-# Телеграфный манипулятор напечатанный на 3D принтере
-***автор RC6OF (ex UR3IQO)***
+_[Описание на русском здесь](README_RU.md)_
 
-_Проект распространятся под лицензией Creative Commons Attribution 4.0 International_
+# 3D Printed CW Paddle 
+***designed by UR3IQO***
+_This project is distributed under Creative Commons Attribution 4.0 International license_
 
-![Keyer](img/keyer_2.jpg)
+![](img/keyer_2.jpg)
 
-Идея напечатать CW манипулятор возникла после знакомства с разработкой EA7HVO (https://www.instructables.com/3D-Printed-Twin-Paddle-Cw-Key/). Однако его конструкция не устраивала меня по ряду причин. Данный вариант это попытка реализовать и проверить некоторые свои идеи, а также сделать манипулятор с использованием имеющихся деталей. Не смотря на то, что идея с проводом внутри коромысел, а также основные размеры были позаимствованы у EA7HVO, все детали были заново спроектированы. В данном репозитории Вы найдете не только `.STL` файлы для печати, но и **исходные CAD модели**, которые (в отличии от ключа EA7HVO) Вы можете изменить, адаптировав под свои нужды.
+This paddle design uses some ideas and dimensions from the EA7HVO 3D printed paddle. But all parts as well as overall construction was redesigned, so I was able to implement my ideas about keyer construction. In this repository you will find `.STL` models as well as **OpenSCAD sources**, and (unlike the original EA7HVO design) **you can modify them** to  suit your requirements.
 
-## Компоненты и материалы необходимые для изготовления ключа:
-1. Латунные стойки М5х18 (удлиненные гайки), 4 шт.
-2. Латунные болты M3x6 (или M3x7), 2 шт.
-3. Латунные болты M3x20, 4 шт.
-4. Латунные гайки M3, 2 шт.
-5. Латунные винты без головки под шестигранный ключ M5x4, 4 шт.
-6. Латунные стойки (удлиненные гайки) М3х4, 2 шт.
-7. Латунные втулки под горячую вставку M4x6x4, 2 шт.
-8. Латунные втулки под горячую вставку M3x5x3, 8 шт.
-9. Винты М5х10 с плоской головкой, 4 шт.
-10. Винты М4х8 , 2 шт.
-11. Винты M3x6 с цилиндрической головкой под шестигранник, 2 шт.
-12. Винты M3x12 с цилиндрической головкой под шестигранник, 4 шт.
-13. Винты M3x5 впотай, 4 шт.
-14. Подшипники MR117RS (7*11*3mm), 4 шт.
-15. Магниты 8x2mm с отверстием под винт М3 впотай, 4 шт.
-16. Кусочки фторопластового стержня Ф4, длиной 2..3мм, 4 шт.
-17. Отрезок тонкого и гибкого провода (МГТФ-0.05 или подобный), 20cm
-18. Аудиокабель с штекером 3.5 или 6.5мм (для подключения ключа)
-19. Около 110гр PETG филамента для печати деталей на 3Д принтере
+## Parts and materials needed to build the keyer
+1. Brass stans with M5 inner thread 18mm length, 4 pieces 
+2. Brass M3x6 (or M3x7) bolts, 2 pieces
+3. Brass M3x20 bolts, 4 pieces
+4. Brass M3 nuts, 2 pieces
+5. Brass headless allen head screws M5x4, 4 pieces
+6. Brass stands M3x4, 2 pieces
+7. Brass heat threaded inserts (M3x5x3), 8 pieces
+8. Brass heat threaded inserts (M4x6x4), 2 pieces
+9. Screws with flat head M5x10, 4 pieces
+10. M4x8 screws, 2 pieces
+11. M3x6 screws, 2 pieces
+12. M3x12 screws, 4 pieces
+13. M3x5 screws flush head, 4 pieces
+14. MR117RS bearings (7*11*3mm), 4 pieces
+15. 8x2mm magnets with hole for M2 screw, 4 pieces
+16. Teflon rod pieces 4mm diameter 3mm long, 4 pieces
+17. Piece of thin flexible wire, 20cm
+18. Audio cable
+19. Approximately 110g of the PETG plastic for 3D printer
 
+## Instructions to build
+### 3D printing recomendations
+- All parts are printed using PETG filament
+- Knobs and knob locks are printed with 100% fill
+- Paddles and paddle handles are printed with 30% fill (honeycomb fill pattern) and with 1mm wall thickness
+- All other parts are printed with 30% fill (honeycomb fill pattern) and with 0.8mm wall thickness
+- "Fussy skin" slicer setting was used when printing outer walls of the top and bottom base parts (this change only paddle appearance)
 
-
-## Как из этого всего сделать ключ
-### Рекомендации по печати
-- Все детали напечатаны мз пластика PETG Starplast **без поддержек** (крышка печатается лицевой частью к столу).
-- Ручки регулировочных винтов и фиксаторы печатаются со 100% заполнением.
-- Коромысла и ручки рычагов печатались с 30% заполнением "медовые соты" и тощиной стенок 1мм (возможно захочется более жесткие рычаги, тогда стоит еще увеличить толщину стенок).
-- Остальные детали печатались с 30% заполнением "медовые соты" и тощиной стенок 0.8мм.
-- Верхнее и нижнее основание по наружи печатались с использованием "нечеткой оболочки" (настраивается в слайсере).
-- Важно, чтобы принтер печатал без "слоновьей ноги".
-
-### Подготовка
-
-Распечатайте тестовую деталь `test.stl`, чтобы проверить размеры посадочных отверстий под подшипники и стойки:
+### Preparing
+Print `test.stl` part and check if mounting places for stands and bearings have correct dimensions. The bearing should fit tightly without any backlash. Correct `base-top.scad` and `cover.scad` files if needed.
 
 ![](img/test.jpg)
 
-Стойка должна входить в посадочное место без особых усилий, но не должна болтаться. Подшипник должен входить с усилием и надежно фиксироваться без люфта. При необходимости откорректируйте размеры в файлах `base-top.scad` и `cover.scad`, и сгенерируйте заново `.STL` файлы для печати.
-
-### Стойки
-Распечатайте кондуктор для сверления отверстий в стойках (1) `drill_conductor.stl`. Используя кондуктор для сверления стоек `drill_conductor.stl` просверлите сквозные отверстия в стойках (в домашних условиях лучше сверлить отдельно с каждой стороны по кондуктору сверлом Ф1.8..2мм, а потом рассверлить насквозь под нарезание резьбы М3):
+### Threading the stands
+Print drill conductor for stands `drill_conductor.stl`. Insert stand into the conductor and drill the hole using the smaller drill (1.8..2mm diameter) than needed for M3 thread. Drill one stand side using conductor then drill another one with stand 180degree twisted. Then use larger drill (2.3mm) to drill through the holes (through both sides) and make M3 thread.
 
 ![](img/drill_conductor_1.jpg)
 
-Нарежьте сквозную резьбу М3.
-
-### Регулировочные винты
-Распечатайте ручки  `knob.stl` и фиксаторы винтов `knob-lock.stl` (в четырех экземплярах). Фиксаторы винтов `knob-lock.stl` положите в морозилку на 20..30 минут. Соберите винты: установите болт M3x20 (3) в ручку `knob.stl`, затем установите все это на какое-то основание с отверстием в которое свободно пройдет винт (я использовал доску с отверстием Ф4мм) достаньте фиксатор `knob-lock.stl` из морозилки и быстро (пока он не нагрелся) с силой вставьте его в ручку, зафиксировав винт. Чтобы это было удобно делать лучше давить на фиксатор исползуя кусочек дерева или пластика для достижения необходимого усилия. Винт должен четко фиксироваться внутри ручки, а фиксатор должен быть заподлицо с поверхностью ручки. 
+### Adjusting screws with knurled knob
+Print `knob.stl` and `knob-lock.stl` (print 4 knobs and 4 locks). Put locks into the freezer for 20..30min. Insert M3x20 bolt into the knob, get the lock from the freezer and quickly (while lock is cold) fix bolt with the lock. You will have to apply some force to do it, so it is better to put knob with bolt on some surface (with the hole for the bolt) and use piece of wood or plastic to push the lock.
 
 ![](img/screw.jpg)
 
-Винты регулировки усилия вкрутите в стойки, магниты (15) с помощью винтов впотай М3х5 (13) прикрутите к стойкам (6), затем стойки с магнитами накрутите на винты регулировки усилия.
+Connect magnets and small stands (M3x4) using M3x5 screw with flush head. Then assemble it with adjusting screw and big stands prepeared above. 
 
-### Рычаги
-Напечатайте коромысла и ручки. Протяните провод через коромысла:
+### Paddles
+Print paddles and handles `paddle*.stl`. Thread the wire in the paddle.
+
 ![](img/paddle_wire.jpg)
-Установите в них магниты (можно их приклеить или закрепить винтом с гайкой, можно и просто вставить в посадочное место, если они плотно входят и хорошо держатся). Зачистите конец провода со стороны винта-контакта, и установите болт М3х6 (2) с гайкой М3(4) на коромысло так, чтобы обеспечивался надежный контакт провода с болтом. Используя паяльник установите в ручки гайки под горячую запрессовку M3x5x3 (8):
+
+Mount magnets (they can be glued, or screwed with M3 screw and nut, or just tightly inserted into the mounting hole).
+Screw the nut and bolt to the paddle, so they have a contact with the wire. Use soldering iron to install hot insertion nuts (M3x5x3) into paddle handles:
 
 ![](img/handle.jpg)
 
-С помощью винтов впотай М3х5 (13) закрепите ручки на коромыслах (ручки можно поменять местами в зависимости от предпочтений оператора, при необходимости это можно сделать и после сборки ключа).
+Assemble paddle with handle using flush head M3x5 screws. Left/right handle can be mounted on any paddle, use more confortable for you variant (they also can be interchanged if needed later, after the paddle would be assembled).
 
 ![](img/paddle_1.jpg)
 ![](img/paddle_2.jpg)
 
-### Крышка
-Распечатайте крышку `cover.stl`. Используя паяльник установите в крышку гайки под горячую запрессовку M4x6x4 (7). Установите подшипники (14), они должны входить с усилием и надежно фиксироваться без люфтов.
+### Cover
+
+Print the cover `cover.stl`. Use soldering iron to install hot insertion nuts (M4x6x4) into the cover. Insert bearings into the packets on the cover.
 
 ![](img/cover.jpg)
 
-### Основание
-Распечатайте верхнее основание `base-top.stl`. Для улучшения качества печати отверстия крепления крышки и стоек будут запечатаны одним слоем пластика, его необходимо удалить (острым ножем, сверлом или надфилем). Используя паяльник установите в основание гайки под горячую запрессовку M3x5x3 (8). Установите подшипники (14), они должны входить с усилием и надежно фиксироваться без люфтов.
+### Base
 
-### Окончательная сборка
-Пропустите провода от коромысел в отверстие в верхнем основании, установите коромысла в подшипники (коромысла должны входить в подшипники с усилием и фиксироваться без люфта). Установите крышку и зафиксируйте ее винтами M4x8 (10). Установите стойки с винтами и магнитами и зафиксируйте их винтами М5х10 (9). Подготовьте кабель, землю спаяйте с проводами, идущими к коромыслам, а провода "точек и тире" прижмите головками винтов крепления стоек. Зафиксируйте кабель с помощью винтов М3х6 (11). 
+Print the top base `base-top.stl`. The top base will have thin plastic layer inside some holes, remove it with sharp knife or drill. Use soldering iron to install hot insertion nuts (M3x5x3) into the top base. Insert bearings into the packets on the top base.
+
+### Final assembly
+
+Pass paddle wires through the hole on the top base, put paddles shaft into the bearings, put cover and screw it using the M4x8 screws. Screw stands with adjusting screws using M5x10 screws. Prepare the cable, put dash/dot lines under the heads of the M5x10 screws (that holds stands with contact screws) and tighten them. Solder earth wire with the paddles wires.
 
 ![](img/wiring.jpg)
 
-Распечатайте нижнее основание `base-bottom.stl`. 
+Print bottom part of the base `base-bottom.stl`. 
 
 ![](img/base.jpg)
 
-Установите верхнее основание на нижнее и закрепите винтами М3х12 (12). После сборки вставьте в стойки (сверху) кусочки фторопласта и придавите их винтами M5х4 без головок (5). Отрегулируйте этими винтами усилие поворота регулировочных винтов.
+Assemble top and bottom parts of the base and screw them using M3x12 screws. Put small pieces of the teflon rod into the M5x18 stands and screw the headless screws. Adjust them so that adjusting screws rotate with comfortable force.
 
 ![](img/keyer_2.jpg)
 
-В нижней части основания ключа достаточно места, чтобы добавить утяжелитель (например, кусочек свинца 10мм высотой позволит довести общий вес до 700..800гр., снизу можно приклеить липучку для телефона или основание от коврика для мышки).
+There is enough space in the bottom base part to put some weight there. With a suitable piece of lead the keyer may weight up to 700g. Also it would be nice addition to glue some antislip material (like the bottom layer of the mouse pad) underneath the base bottom. 
 
-Успехов!
+Enjoy!
 73 de RC6OF (ex UR3IQO)
 
-P.S. При проектировании деталей данного ключа были использованы библиотеки Knurled Surface (https://github.com/smkent/knurled-openscad) и Round Anything (https://github.com/Irev-Dev/Round-Anything)
+P.S. Knurled Surface  (https://github.com/smkent/knurled-openscad) and Round Anything (https://github.com/Irev-Dev/Round-Anything) libraries were used in this project
