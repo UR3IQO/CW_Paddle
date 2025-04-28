@@ -1,4 +1,5 @@
 #Телеграфный манипулятор напечатанный на 3D принтере
+
 ***автор RC6OF (ex UR3IQO)***
 _Проект распространятся под лицензией Creative Commons Attribution 4.0 International_
 
