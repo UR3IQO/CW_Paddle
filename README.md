@@ -1,6 +1,6 @@
 #Телеграфный манипулятор напечатанный на 3D принтере
 ***автор RC6OF (ex UR3IQO)***
-*Проект распространятся под лицензией Creative Commons Attribution 4.0 International*
+_Проект распространятся под лицензией Creative Commons Attribution 4.0 International_
 
 ![Keyer](img/keyer_2.jpg)
 
