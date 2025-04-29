@@ -2,6 +2,7 @@ _[Описание на русском здесь](README_RU.md)_
 
 # 3D Printed CW Paddle 
 ***designed by UR3IQO***
+
 _This project is distributed under Creative Commons Attribution 4.0 International license_
 
 ![](img/keyer_2.jpg)
