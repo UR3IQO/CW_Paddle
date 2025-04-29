@@ -77,11 +77,11 @@ Print the cover `cover.stl`. Use soldering iron to install hot insertion nuts (M
 
 ### Base
 
-Print the top base `base-top.stl`. The top base will have thin plastic layer inside some holes, remove it with sharp knife or drill. Use soldering iron to install hot insertion nuts (M3x5x3) into the top base. Insert bearings into the packets on the top base.
+Print the top base `base-top.stl` and cable mounting plate `cable_mount.stl`. This parts will have thin plastic layer inside some holes, remove it with sharp knife or drill. Use soldering iron to install hot insertion nuts (M3x5x3) into the top base. Insert bearings into the packets on the top base.
 
 ### Final assembly
 
-Pass paddle wires through the hole on the top base, put paddles shaft into the bearings, put cover and screw it using the M4x8 screws. Screw stands with adjusting screws using M5x10 screws. Prepare the cable, put dash/dot lines under the heads of the M5x10 screws (that holds stands with contact screws) and tighten them. Solder earth wire with the paddles wires.
+Pass paddle wires through the hole on the top base, put paddles shafts into the bearings, put cover and screw it using the M4x8 screws. Screw stands with adjusting screws using M5x10 screws. Prepare the cable, put dash/dot lines under the heads of the M5x10 screws (that holds stands with contact screws) and tighten them. Solder earth wire with the paddles wires. Fix cable with cable mounting plate using M3x6 screws.
 
 ![](img/wiring.jpg)
 
